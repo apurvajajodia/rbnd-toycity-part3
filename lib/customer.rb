@@ -21,6 +21,9 @@ class Customer
 		end
 	end	
 
+	def purchase(toy)
+		Transaction.new(@name, toy)
+	end
 
 
 	private
