@@ -18,7 +18,6 @@ class Product
 	def self.find_by_title(string)
 		@@products.each do |i|
 			if(i.title == string)
-			puts "found it!" #This is so that the user can know that the program found what he was looking for
 			return i
 			end
 		end
@@ -49,11 +48,9 @@ class Product
 	def add_to_products
 		@@products.each do |i|
 			if(i.title == @title)
-			puts "inside if"
 			raise DuplicateProductError, "'#{@title}' already exists"
 			end
 		end	
-			puts "inside else"
 			@@products << self
 	end		
 
