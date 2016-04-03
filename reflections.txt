@@ -1,0 +1,12 @@
+How long did you spend working on this project?
+About 60 to 90 minutes
+
+What was the most rewarding challenge you conquered?
+I was able to edit the variable of another class by accessing it from a method of a different class, this concept was completly new to me.
+
+What two additional features did you build? Why?
+I added additional features to show when the stock is empty and another to show when the stock is low to trigger a warning.
+These messages will pop up only when the stock is actually low or empty and will other wise display no messages so that no confusion is caused.
+
+Where do you still have room to grow?
+The purchase order can be made user interactive. So that use gets a menu of toys and price, they can then choose toy and quantity, the system will then check the stock and if available ship it.
