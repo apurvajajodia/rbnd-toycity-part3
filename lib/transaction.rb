@@ -20,7 +20,6 @@ class Transaction
 	def self.find(id_no)
 		@@transactions.each do |i|
 			if(i.id == id_no)
-			puts "found it!" #This is so that the user can know that the program found what he was looking for
 			return i
 			end
 		end
@@ -33,7 +32,6 @@ class Transaction
 			@@count = @@count + 1
 			@id = @@count
 			@product.stock = @product.stock - 1
-			puts "inside the purchase if"
 		else
 			raise OutOfStockError, "#{@product.title} is out of stock"
 		end
