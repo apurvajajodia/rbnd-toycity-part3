@@ -65,3 +65,12 @@ puts walter.name # Should return "Walter Latimer"
 
  #walter.purchase(firehouse)
 # Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.
+
+#Additional feature as part of the project
+#Print the items that are out of stock
+puts "The below items are out of stock, please consider replenishing"
+Product.out_stock
+
+#Print the items that are low on stock, so as to trigger a warning
+Product.low_stock
+
